@@ -1,0 +1,450 @@
+{
+  "repo": "kotlindev",
+  "generated": "2026-11-18",
+  "purpose": "KotlinDev \u2014 Android App and Game Development in Kotlin Knowledge Base",
+  "startHere": [
+    "AGENTS.md",
+    "README.md"
+  ],
+  "readingOrder": [
+    "README.md",
+    "AGENTS.md",
+    "SOURCES.md",
+    "docs/01-kotlin-language-for-android.md",
+    "docs/02-android-platform-and-versions.md",
+    "docs/03-project-setup-gradle-and-tooling.md",
+    "docs/04-app-anatomy-lifecycle-and-components.md",
+    "docs/05-jetpack-compose-ui.md",
+    "docs/06-views-xml-and-interop.md",
+    "docs/07-navigation-and-app-structure.md",
+    "docs/08-architecture-patterns.md",
+    "docs/09-dependency-injection.md",
+    "docs/10-coroutines-flow-and-concurrency.md",
+    "docs/11-data-persistence-room-datastore-files.md",
+    "docs/12-networking-retrofit-ktor-serialization.md",
+    "docs/13-images-media-camera-and-playback.md",
+    "docs/14-background-work-and-foreground-services.md",
+    "docs/15-permissions-security-and-privacy.md",
+    "docs/16-testing-strategy.md",
+    "docs/17-performance-profiling-and-optimization.md",
+    "docs/18-accessibility-internationalization-and-theming.md",
+    "docs/19-build-signing-release-and-google-play.md",
+    "docs/20-monetization-billing-and-ads.md",
+    "docs/21-form-factors-wear-tv-auto-foldables.md",
+    "docs/22-kotlin-multiplatform-and-compose-multiplatform.md",
+    "docs/23-games-overview-choosing-a-route.md",
+    "docs/24-games-2d-with-compose-canvas-and-custom-rendering.md",
+    "docs/25-games-engines-libgdx-korge-godot.md",
+    "docs/26-games-native-graphics-opengl-vulkan-agdk.md",
+    "docs/27-games-services-play-games-and-play-games-on-pc.md",
+    "docs/28-games-performance-input-audio-and-saves.md",
+    "docs/29-backend-sync-and-online-services.md",
+    "docs/30-ci-cd-and-automation.md",
+    "docs/31-migration-java-and-views-to-modern-kotlin.md",
+    "docs/32-patterns-cookbook.md",
+    "docs/33-ai-assisted-development.md",
+    "reference/adb-and-tooling-commands.md",
+    "reference/api-levels.md",
+    "reference/game-route-comparison.md",
+    "reference/gradle-and-versions-cheatsheet.md",
+    "reference/library-directory.md",
+    "reference/permissions-table.md",
+    "reference/play-requirements-and-deadlines.md",
+    "checklists/game-release-checklist.md",
+    "checklists/new-project-checklist.md",
+    "checklists/performance-audit-checklist.md",
+    "checklists/play-submission-checklist.md",
+    "checklists/pre-release-checklist.md",
+    "checklists/security-and-privacy-checklist.md",
+    "templates/README.md",
+    "examples/README.md",
+    "tools/README.md"
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 6966,
+      "summary": "AGENTS.md \u2014 Instructions for AI agents writing Kotlin Android code"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15534,
+      "summary": "KotlinDev \u2014 Android App and Game Development Knowledge Base (Kotlin)"
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 9843,
+      "summary": "SOURCES.md \u2014 Curated source list, verified"
+    },
+    {
+      "path": "checklists/game-release-checklist.md",
+      "bytes": 2869,
+      "summary": "Game Release Checklist"
+    },
+    {
+      "path": "checklists/new-project-checklist.md",
+      "bytes": 2876,
+      "summary": "New Project Checklist"
+    },
+    {
+      "path": "checklists/performance-audit-checklist.md",
+      "bytes": 2304,
+      "summary": "Performance Audit Checklist"
+    },
+    {
+      "path": "checklists/play-submission-checklist.md",
+      "bytes": 2203,
+      "summary": "Play Submission Checklist"
+    },
+    {
+      "path": "checklists/pre-release-checklist.md",
+      "bytes": 2521,
+      "summary": "Pre-Release Checklist"
+    },
+    {
+      "path": "checklists/security-and-privacy-checklist.md",
+      "bytes": 2599,
+      "summary": "Security and Privacy Checklist"
+    },
+    {
+      "path": "docs/01-kotlin-language-for-android.md",
+      "bytes": 8201,
+      "summary": "Kotlin Language for Android"
+    },
+    {
+      "path": "docs/02-android-platform-and-versions.md",
+      "bytes": 8284,
+      "summary": "Android Platform and Versions"
+    },
+    {
+      "path": "docs/03-project-setup-gradle-and-tooling.md",
+      "bytes": 7770,
+      "summary": "Project Setup, Gradle, and Tooling"
+    },
+    {
+      "path": "docs/04-app-anatomy-lifecycle-and-components.md",
+      "bytes": 7485,
+      "summary": "App Anatomy, Lifecycle, and Components"
+    },
+    {
+      "path": "docs/05-jetpack-compose-ui.md",
+      "bytes": 8079,
+      "summary": "Jetpack Compose UI"
+    },
+    {
+      "path": "docs/06-views-xml-and-interop.md",
+      "bytes": 6825,
+      "summary": "Views, XML, and Interop"
+    },
+    {
+      "path": "docs/07-navigation-and-app-structure.md",
+      "bytes": 7084,
+      "summary": "Navigation and App Structure"
+    },
+    {
+      "path": "docs/08-architecture-patterns.md",
+      "bytes": 7360,
+      "summary": "Architecture Patterns"
+    },
+    {
+      "path": "docs/09-dependency-injection.md",
+      "bytes": 6302,
+      "summary": "Dependency Injection"
+    },
+    {
+      "path": "docs/10-coroutines-flow-and-concurrency.md",
+      "bytes": 7192,
+      "summary": "Coroutines, Flow, and Concurrency"
+    },
+    {
+      "path": "docs/11-data-persistence-room-datastore-files.md",
+      "bytes": 7593,
+      "summary": "Data Persistence: Room, DataStore, and Files"
+    },
+    {
+      "path": "docs/12-networking-retrofit-ktor-serialization.md",
+      "bytes": 9456,
+      "summary": "Networking: Retrofit, Ktor Client, and kotlinx.serialization"
+    },
+    {
+      "path": "docs/13-images-media-camera-and-playback.md",
+      "bytes": 8572,
+      "summary": "Images, Media, Camera, and Playback"
+    },
+    {
+      "path": "docs/14-background-work-and-foreground-services.md",
+      "bytes": 8922,
+      "summary": "Background Work and Foreground Services"
+    },
+    {
+      "path": "docs/15-permissions-security-and-privacy.md",
+      "bytes": 9434,
+      "summary": "Permissions, Security, and Privacy"
+    },
+    {
+      "path": "docs/16-testing-strategy.md",
+      "bytes": 10136,
+      "summary": "Testing Strategy for Android Apps"
+    },
+    {
+      "path": "docs/17-performance-profiling-and-optimization.md",
+      "bytes": 11712,
+      "summary": "Performance Profiling and Optimization"
+    },
+    {
+      "path": "docs/18-accessibility-internationalization-and-theming.md",
+      "bytes": 12383,
+      "summary": "Accessibility, Internationalization, and Theming"
+    },
+    {
+      "path": "docs/19-build-signing-release-and-google-play.md",
+      "bytes": 10338,
+      "summary": "Build, Signing, Release, and Google Play"
+    },
+    {
+      "path": "docs/20-monetization-billing-and-ads.md",
+      "bytes": 10630,
+      "summary": "Monetization, Play Billing, and Ads"
+    },
+    {
+      "path": "docs/21-form-factors-wear-tv-auto-foldables.md",
+      "bytes": 9901,
+      "summary": "Form Factors: Large Screens, Foldables, Wear, TV, Auto, and XR"
+    },
+    {
+      "path": "docs/22-kotlin-multiplatform-and-compose-multiplatform.md",
+      "bytes": 9684,
+      "summary": "Kotlin Multiplatform and Compose Multiplatform"
+    },
+    {
+      "path": "docs/23-games-overview-choosing-a-route.md",
+      "bytes": 7967,
+      "summary": "Games Overview \u2014 Choosing a Route"
+    },
+    {
+      "path": "docs/24-games-2d-with-compose-canvas-and-custom-rendering.md",
+      "bytes": 7521,
+      "summary": "Games 2D with Compose Canvas and Custom Rendering"
+    },
+    {
+      "path": "docs/25-games-engines-libgdx-korge-godot.md",
+      "bytes": 7401,
+      "summary": "Games Engines \u2014 libGDX, KorGE, and Godot"
+    },
+    {
+      "path": "docs/26-games-native-graphics-opengl-vulkan-agdk.md",
+      "bytes": 6791,
+      "summary": "Games Native Graphics \u2014 OpenGL, Vulkan, and AGDK"
+    },
+    {
+      "path": "docs/27-games-services-play-games-and-play-games-on-pc.md",
+      "bytes": 7741,
+      "summary": "Games Services \u2014 Play Games and Play Games on PC"
+    },
+    {
+      "path": "docs/28-games-performance-input-audio-and-saves.md",
+      "bytes": 8841,
+      "summary": "Games Performance, Input, Audio, and Saves"
+    },
+    {
+      "path": "docs/29-backend-sync-and-online-services.md",
+      "bytes": 8765,
+      "summary": "Backend, Sync, and Online Services"
+    },
+    {
+      "path": "docs/30-ci-cd-and-automation.md",
+      "bytes": 7499,
+      "summary": "CI/CD and Automation"
+    },
+    {
+      "path": "docs/31-migration-java-and-views-to-modern-kotlin.md",
+      "bytes": 8101,
+      "summary": "Migration \u2014 Java and Views to Modern Kotlin"
+    },
+    {
+      "path": "docs/32-patterns-cookbook.md",
+      "bytes": 8229,
+      "summary": "Patterns Cookbook"
+    },
+    {
+      "path": "docs/33-ai-assisted-development.md",
+      "bytes": 6708,
+      "summary": "AI-Assisted Development \u2014 How an AI Should Use This Repo"
+    },
+    {
+      "path": "examples/01-hello-compose/MainActivity.kt",
+      "bytes": 2044,
+      "summary": ""
+    },
+    {
+      "path": "examples/01-hello-compose/README.md",
+      "bytes": 918,
+      "summary": "01 \u2014 Hello Compose"
+    },
+    {
+      "path": "examples/02-counter-mvvm-flow/CounterScreen.kt",
+      "bytes": 2617,
+      "summary": ""
+    },
+    {
+      "path": "examples/02-counter-mvvm-flow/CounterViewModel.kt",
+      "bytes": 1064,
+      "summary": ""
+    },
+    {
+      "path": "examples/02-counter-mvvm-flow/README.md",
+      "bytes": 1181,
+      "summary": "02 \u2014 Counter with MVVM + StateFlow (unidirectional data flow)"
+    },
+    {
+      "path": "examples/03-room-notes/Note.kt",
+      "bytes": 704,
+      "summary": ""
+    },
+    {
+      "path": "examples/03-room-notes/NoteDao.kt",
+      "bytes": 817,
+      "summary": ""
+    },
+    {
+      "path": "examples/03-room-notes/NotesRepository.kt",
+      "bytes": 1584,
+      "summary": ""
+    },
+    {
+      "path": "examples/03-room-notes/README.md",
+      "bytes": 1925,
+      "summary": "03 \u2014 Room notes (entity, DAO, repository)"
+    },
+    {
+      "path": "examples/04-canvas-game-loop/GameScreen.kt",
+      "bytes": 4947,
+      "summary": ""
+    },
+    {
+      "path": "examples/04-canvas-game-loop/README.md",
+      "bytes": 1448,
+      "summary": "04 \u2014 Canvas game loop (Compose)"
+    },
+    {
+      "path": "examples/README.md",
+      "bytes": 1312,
+      "summary": "Examples"
+    },
+    {
+      "path": "reference/adb-and-tooling-commands.md",
+      "bytes": 5322,
+      "summary": "Reference \u2014 adb and Tooling Commands"
+    },
+    {
+      "path": "reference/api-levels.md",
+      "bytes": 3045,
+      "summary": "Reference \u2014 Android API Levels"
+    },
+    {
+      "path": "reference/game-route-comparison.md",
+      "bytes": 3889,
+      "summary": "Reference \u2014 Game Route Comparison"
+    },
+    {
+      "path": "reference/gradle-and-versions-cheatsheet.md",
+      "bytes": 9632,
+      "summary": "Reference \u2014 Gradle and Versions Cheatsheet"
+    },
+    {
+      "path": "reference/library-directory.md",
+      "bytes": 8619,
+      "summary": "Reference \u2014 Library Directory"
+    },
+    {
+      "path": "reference/permissions-table.md",
+      "bytes": 5301,
+      "summary": "Reference \u2014 Permissions Table"
+    },
+    {
+      "path": "reference/play-requirements-and-deadlines.md",
+      "bytes": 4786,
+      "summary": "Reference \u2014 Play Requirements and Deadlines"
+    },
+    {
+      "path": "templates/README.md",
+      "bytes": 1749,
+      "summary": "Templates"
+    },
+    {
+      "path": "templates/compose-app/app/build.gradle.kts",
+      "bytes": 2043,
+      "summary": ""
+    },
+    {
+      "path": "templates/compose-app/app/src/main/AndroidManifest.xml",
+      "bytes": 843,
+      "summary": ""
+    },
+    {
+      "path": "templates/compose-app/app/src/main/java/com/example/app/MainActivity.kt",
+      "bytes": 2061,
+      "summary": ""
+    },
+    {
+      "path": "templates/compose-app/build.gradle.kts",
+      "bytes": 249,
+      "summary": ""
+    },
+    {
+      "path": "templates/compose-app/gradle/libs.versions.toml",
+      "bytes": 5023,
+      "summary": ""
+    },
+    {
+      "path": "templates/compose-app/settings.gradle.kts",
+      "bytes": 534,
+      "summary": ""
+    },
+    {
+      "path": "templates/github-workflows/android-ci.yml",
+      "bytes": 989,
+      "summary": ""
+    },
+    {
+      "path": "templates/github-workflows/release-aab.yml",
+      "bytes": 2298,
+      "summary": ""
+    },
+    {
+      "path": "tools/README.md",
+      "bytes": 1449,
+      "summary": "Tools"
+    },
+    {
+      "path": "tools/build-ai-bundle.py",
+      "bytes": 4449,
+      "summary": ""
+    },
+    {
+      "path": "tools/check-project.py",
+      "bytes": 5801,
+      "summary": ""
+    },
+    {
+      "path": "tools/ide.md",
+      "bytes": 3123,
+      "summary": "Android Studio \u2014 recommended settings and setup"
+    },
+    {
+      "path": "tools/new-project.ps1",
+      "bytes": 2080,
+      "summary": ""
+    },
+    {
+      "path": "tools/new-project.sh",
+      "bytes": 2366,
+      "summary": ""
+    },
+    {
+      "path": "tools/versions.json",
+      "bytes": 826,
+      "summary": ""
+    }
+  ]
+}
