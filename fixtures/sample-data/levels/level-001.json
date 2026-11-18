@@ -1,0 +1,87 @@
+{
+  "id": "level-001",
+  "name": "First Steps",
+  "version": 1,
+  "world": {
+    "widthTiles": 20,
+    "heightTiles": 12,
+    "tileSizePx": 32,
+    "backgroundColor": "#101418"
+  },
+  "playerSpawn": {
+    "xTiles": 1,
+    "yTiles": 10
+  },
+  "exit": {
+    "xTiles": 18,
+    "yTiles": 1
+  },
+  "timeLimitSeconds": 6000,
+  "parScore": 3000,
+  "entities": [
+    {
+      "type": "ball",
+      "id": "ball-1",
+      "xTiles": 5,
+      "yTiles": 6,
+      "radiusPx": 12,
+      "color": "#960018",
+      "vx": 120,
+      "vy": 80
+    },
+    {
+      "type": "coin",
+      "id": "coin-1",
+      "xTiles": 9,
+      "yTiles": 5,
+      "value": 100
+    },
+    {
+      "type": "coin",
+      "id": "coin-2",
+      "xTiles": 14,
+      "yTiles": 8,
+      "value": 100
+    },
+    {
+      "type": "enemy-patrol",
+      "id": "patrol-1",
+      "xTiles": 12,
+      "yTiles": 3,
+      "toXTiles": 16,
+      "speedTilesPerSecond": 2
+    }
+  ],
+  "goals": [
+    {
+      "type": "reach-exit",
+      "description": "Reach the exit tile"
+    },
+    {
+      "type": "collect-all",
+      "target": "coin",
+      "description": "Collect every coin"
+    }
+  ],
+  "tiles": {
+    "legend": {
+      "#": "wall",
+      ".": "floor",
+      "~": "hazard"
+    },
+    "rows": [
+      "####################",
+      "#.................E#",
+      "#....####..........#",
+      "#..................#",
+      "#..##......##......#",
+      "#..................#",
+      "#......##..........#",
+      "#..................#",
+      "#..####.....####...#",
+      "#..................#",
+      "#P.................#",
+      "####################"
+    ]
+  }
+}

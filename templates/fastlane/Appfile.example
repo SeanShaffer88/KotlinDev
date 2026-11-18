@@ -1,0 +1,15 @@
+# Appfile.example — copy to `Appfile` (no extension) and fill in.
+# Docs: https://docs.fastlane.tools/actions/supply/
+
+# Your app's package name (applicationId from app/build.gradle.kts).
+package_name("com.example.app")
+
+# Path to the Google Play service-account JSON key.
+# NEVER commit the real key. Point this at a file outside the repo,
+# or better, pass it via the SUPPLY_JSON_KEY environment variable /
+# CI secret and delete this line.
+json_key_file("./play-service-account.json")
+
+# Default track for `fastlane supply` uploads without a lane.
+# Start at "internal" — never publish a first upload straight to production.
+track("internal")

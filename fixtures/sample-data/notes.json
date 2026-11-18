@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "title": "Compose state checklist",
+    "body": "Hoist state, use rememberSaveable for config changes, collect StateFlow with lifecycle.",
+    "tags": [
+      "compose",
+      "android"
+    ],
+    "pinned": true,
+    "createdAt": "2026-10-01T09:00:00Z",
+    "updatedAt": "2026-10-01T09:00:00Z"
+  },
+  {
+    "id": 2,
+    "userId": 1,
+    "title": "Room migration notes",
+    "body": "Export schemas, write a migration test for every version bump.",
+    "tags": [
+      "room",
+      "data"
+    ],
+    "pinned": false,
+    "createdAt": "2026-10-03T10:30:00Z",
+    "updatedAt": "2026-10-03T10:30:00Z"
+  },
+  {
+    "id": 3,
+    "userId": 2,
+    "title": "Release day runbook",
+    "body": "Build AAB, run internal track, watch vitals for 24h before rollout.",
+    "tags": [
+      "release",
+      "play"
+    ],
+    "pinned": true,
+    "createdAt": "2026-10-05T08:15:00Z",
+    "updatedAt": "2026-10-05T08:15:00Z"
+  },
+  {
+    "id": 4,
+    "userId": 3,
+    "title": "Game loop timing",
+    "body": "Clamp dt to 33ms max so physics never explodes after a hitch.",
+    "tags": [
+      "games",
+      "performance"
+    ],
+    "pinned": false,
+    "createdAt": "2026-10-07T14:20:00Z",
+    "updatedAt": "2026-10-07T14:20:00Z"
+  },
+  {
+    "id": 5,
+    "userId": 4,
+    "title": "Navigation patterns",
+    "body": "Type-safe routes, one back stack owner, deep links tested from adb.",
+    "tags": [
+      "navigation"
+    ],
+    "pinned": false,
+    "createdAt": "2026-10-09T11:45:00Z",
+    "updatedAt": "2026-10-09T11:45:00Z"
+  },
+  {
+    "id": 6,
+    "userId": 5,
+    "title": "Apollo checklist (sample)",
+    "body": "A fictional checklist used only as sample data for tests.",
+    "tags": [
+      "sample"
+    ],
+    "pinned": false,
+    "createdAt": "2026-10-11T16:00:00Z",
+    "updatedAt": "2026-10-11T16:00:00Z"
+  },
+  {
+    "id": 7,
+    "userId": 6,
+    "title": "Coroutines traps",
+    "body": "Never GlobalScope. structured concurrency, supervisor only where failure is isolated.",
+    "tags": [
+      "coroutines"
+    ],
+    "pinned": true,
+    "createdAt": "2026-10-13T09:30:00Z",
+    "updatedAt": "2026-10-13T09:30:00Z"
+  },
+  {
+    "id": 8,
+    "userId": 7,
+    "title": "Accessibility pass",
+    "body": "48dp targets, content descriptions, test with TalkBack and font scale 1.3.",
+    "tags": [
+      "accessibility"
+    ],
+    "pinned": false,
+    "createdAt": "2026-10-15T13:10:00Z",
+    "updatedAt": "2026-10-15T13:10:00Z"
+  },
+  {
+    "id": 9,
+    "userId": 8,
+    "title": "Offline-first design",
+    "body": "Room is source of truth, network only refreshes it.",
+    "tags": [
+      "architecture"
+    ],
+    "pinned": false,
+    "createdAt": "2026-10-18T10:00:00Z",
+    "updatedAt": "2026-10-18T10:00:00Z"
+  },
+  {
+    "id": 10,
+    "userId": 9,
+    "title": "Baseline profile results",
+    "body": "Regenerate after big Compose changes, measure with Macrobenchmark.",
+    "tags": [
+      "performance"
+    ],
+    "pinned": false,
+    "createdAt": "2026-10-21T15:40:00Z",
+    "updatedAt": "2026-10-21T15:40:00Z"
+  },
+  {
+    "id": 11,
+    "userId": 10,
+    "title": "Network security config",
+    "body": "HTTPS only, pin only with a backup pin and an expiry plan.",
+    "tags": [
+      "security"
+    ],
+    "pinned": false,
+    "createdAt": "2026-10-24T12:25:00Z",
+    "updatedAt": "2026-10-24T12:25:00Z"
+  },
+  {
+    "id": 12,
+    "userId": 11,
+    "title": "Kernel-style code review",
+    "body": "Small diffs, clear messages, no unrelated refactoring.",
+    "tags": [
+      "process"
+    ],
+    "pinned": false,
+    "createdAt": "2026-10-27T09:05:00Z",
+    "updatedAt": "2026-10-27T09:05:00Z"
+  },
+  {
+    "id": 13,
+    "userId": 12,
+    "title": "Chip design trivia",
+    "body": "Sample note with no real-world use beyond fixtures.",
+    "tags": [
+      "sample"
+    ],
+    "pinned": false,
+    "createdAt": "2026-10-29T17:30:00Z",
+    "updatedAt": "2026-10-29T17:30:00Z"
+  },
+  {
+    "id": 14,
+    "userId": 1,
+    "title": "Play data safety draft",
+    "body": "List every data type collected, why, and whether it is shared.",
+    "tags": [
+      "play",
+      "privacy"
+    ],
+    "pinned": false,
+    "createdAt": "2026-11-01T10:10:00Z",
+    "updatedAt": "2026-11-01T10:10:00Z"
+  },
+  {
+    "id": 15,
+    "userId": 3,
+    "title": "Sprite batching idea",
+    "body": "Draw all balls in one Canvas pass, keep state outside the draw scope.",
+    "tags": [
+      "games",
+      "compose"
+    ],
+    "pinned": true,
+    "createdAt": "2026-11-03T14:55:00Z",
+    "updatedAt": "2026-11-03T14:55:00Z"
+  }
+]

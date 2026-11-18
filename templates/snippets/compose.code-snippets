@@ -1,0 +1,143 @@
+{
+  "Compose Screen (stateful route + stateless content)": {
+    "prefix": "comp-screen",
+    "scope": "kotlin",
+    "description": "Jetpack Compose screen: route collects StateFlow, content is stateless and previewable",
+    "body": [
+      "@Composable",
+      "fun ${1:Feature}Route(viewModel: ${1:Feature}ViewModel = viewModel()) {",
+      "    val state by viewModel.uiState.collectAsStateWithLifecycle()",
+      "    ${1:Feature}Screen(state = state, onEvent = viewModel::onEvent)",
+      "}",
+      "",
+      "@Composable",
+      "fun ${1:Feature}Screen(state: ${1:Feature}UiState, onEvent: (${1:Feature}Event) -> Unit) {",
+      "    Column(Modifier.fillMaxSize().padding(16.dp)) {",
+      "        Text(text = state.${2:title}, style = MaterialTheme.typography.headlineMedium)",
+      "        $0",
+      "    }",
+      "}",
+      "",
+      "@Preview(showBackground = true)",
+      "@Composable",
+      "private fun ${1:Feature}ScreenPreview() {",
+      "    ${1:Feature}Screen(state = ${1:Feature}UiState(), onEvent = {})",
+      "}"
+    ]
+  },
+  "ViewModel with StateFlow (UDF)": {
+    "prefix": "comp-viewmodel",
+    "scope": "kotlin",
+    "description": "ViewModel exposing a StateFlow UiState, updated only through onEvent",
+    "body": [
+      "data class ${1:Feature}UiState(val isLoading: Boolean = false, val ${2:items}: List<String> = emptyList(), val error: String? = null)",
+      "",
+      "sealed interface ${1:Feature}Event {",
+      "    data object Refresh : ${1:Feature}Event",
+      "}",
+      "",
+      "class ${1:Feature}ViewModel(private val repository: ${3:Repository}) : ViewModel() {",
+      "    private val _uiState = MutableStateFlow(${1:Feature}UiState())",
+      "    val uiState: StateFlow<${1:Feature}UiState> = _uiState.asStateFlow()",
+      "",
+      "    fun onEvent(event: ${1:Feature}Event) {",
+      "        when (event) {",
+      "            ${1:Feature}Event.Refresh -> refresh()",
+      "        }",
+      "    }",
+      "",
+      "    private fun refresh() = viewModelScope.launch {",
+      "        _uiState.update { it.copy(isLoading = true, error = null) }",
+      "        runCatching { repository.${4:load}() }",
+      "            .onSuccess { data -> _uiState.update { it.copy(isLoading = false, ${2:items} = data) } }",
+      "            .onFailure { e -> _uiState.update { it.copy(isLoading = false, error = e.message) } }",
+      "    }",
+      "    $0",
+      "}"
+    ]
+  },
+  "StateFlow declaration (in a class)": {
+    "prefix": "stateflow",
+    "scope": "kotlin",
+    "description": "Private MutableStateFlow with a public read-only StateFlow view",
+    "body": [
+      "private val _${1:state} = MutableStateFlow<${2:MyState}>(${2:MyState}())",
+      "val ${1:state}: StateFlow<${2:MyState}> = _${1:state}.asStateFlow()",
+      "$0"
+    ]
+  },
+  "Room DAO": {
+    "prefix": "room-dao",
+    "scope": "kotlin",
+    "description": "Room DAO: Flow query, single-row query, upsert, delete (Room 2 package shown; Room 3 uses androidx.room3)",
+    "body": [
+      "@Dao",
+      "interface ${1:Note}Dao {",
+      "    @Query(\"SELECT * FROM ${2:notes} ORDER BY id DESC\")",
+      "    fun observeAll(): Flow<List<${1:Note}>>",
+      "",
+      "    @Query(\"SELECT * FROM ${2:notes} WHERE id = :id\")",
+      "    suspend fun getById(id: Long): ${1:Note}?",
+      "",
+      "    @Upsert",
+      "    suspend fun upsert(item: ${1:Note}): Long",
+      "",
+      "    @Delete",
+      "    suspend fun delete(item: ${1:Note})",
+      "    $0",
+      "}"
+    ]
+  },
+  "Retrofit Service": {
+    "prefix": "retrofit-service",
+    "scope": "kotlin",
+    "description": "Retrofit service interface with kotlinx.serialization models",
+    "body": [
+      "interface ${1:Api}Service {",
+      "    @GET(\"${2:items}\")",
+      "    suspend fun list${3:Items}(): List<${4:Item}Dto>",
+      "",
+      "    @GET(\"${2:items}/{id}\")",
+      "    suspend fun get${5:Item}(@Path(\"id\") id: Long): ${4:Item}Dto",
+      "    $0",
+      "}",
+      "",
+      "@Serializable",
+      "data class ${4:Item}Dto(val id: Long, val ${6:name}: String)"
+    ]
+  },
+  "Compose Canvas Game Loop": {
+    "prefix": "game-loop",
+    "scope": "kotlin",
+    "description": "Compose Canvas game loop: withFrameNanos drives update(dt), state held outside the draw scope (see docs/24)",
+    "body": [
+      "@Composable",
+      "fun ${1:Game}Screen() {",
+      "    var ballX by remember { mutableFloatStateOf(100f) }",
+      "    var ballY by remember { mutableFloatStateOf(100f) }",
+      "    var vx by remember { mutableFloatStateOf(220f) } // px per second",
+      "    var vy by remember { mutableFloatStateOf(160f) }",
+      "",
+      "    LaunchedEffect(Unit) {",
+      "        var last = withFrameNanos { it }",
+      "        while (true) {",
+      "            withFrameNanos { frame ->",
+      "                val dt = ((frame - last) / 1_000_000_000f).coerceAtMost(0.033f) // clamp hitches",
+      "                last = frame",
+      "                ballX += vx * dt",
+      "                ballY += vy * dt",
+      "            }",
+      "        }",
+      "    }",
+      "",
+      "    Canvas(Modifier.fillMaxSize()) {",
+      "        // bounce inside the field",
+      "        if (ballX < 24f || ballX > size.width - 24f) vx = -vx",
+      "        if (ballY < 24f || ballY > size.height - 24f) vy = -vy",
+      "        drawCircle(color = Color(0xFF960018), radius = 24f, center = Offset(ballX, ballY))",
+      "        $0",
+      "    }",
+      "}"
+    ]
+  }
+}

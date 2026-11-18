@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "username": "ada_dev",
+    "displayName": "Ada Lovelace",
+    "email": "ada@example.com",
+    "avatarColor": "#960018",
+    "level": 12,
+    "joinedAt": "2025-01-14",
+    "isPremium": true
+  },
+  {
+    "id": 2,
+    "username": "grace_h",
+    "displayName": "Grace Hopper",
+    "email": "grace@example.com",
+    "avatarColor": "#2563EB",
+    "level": 9,
+    "joinedAt": "2025-02-03",
+    "isPremium": false
+  },
+  {
+    "id": 3,
+    "username": "alan_t",
+    "displayName": "Alan Turing",
+    "email": "alan@example.com",
+    "avatarColor": "#059669",
+    "level": 15,
+    "joinedAt": "2025-02-20",
+    "isPremium": true
+  },
+  {
+    "id": 4,
+    "username": "edsger_d",
+    "displayName": "Edsger Dijkstra",
+    "email": "edsger@example.com",
+    "avatarColor": "#D97706",
+    "level": 7,
+    "joinedAt": "2025-03-05",
+    "isPremium": false
+  },
+  {
+    "id": 5,
+    "username": "margaret_h",
+    "displayName": "Margaret Hamilton",
+    "email": "margaret@example.com",
+    "avatarColor": "#7C3AED",
+    "level": 11,
+    "joinedAt": "2025-03-19",
+    "isPremium": true
+  },
+  {
+    "id": 6,
+    "username": "donald_k",
+    "displayName": "Donald Knuth",
+    "email": "donald@example.com",
+    "avatarColor": "#0891B2",
+    "level": 8,
+    "joinedAt": "2025-04-02",
+    "isPremium": false
+  },
+  {
+    "id": 7,
+    "username": "barbara_l",
+    "displayName": "Barbara Liskov",
+    "email": "barbara@example.com",
+    "avatarColor": "#DB2777",
+    "level": 10,
+    "joinedAt": "2025-04-27",
+    "isPremium": true
+  },
+  {
+    "id": 8,
+    "username": "dennis_r",
+    "displayName": "Dennis Ritchie",
+    "email": "dennis@example.com",
+    "avatarColor": "#65A30D",
+    "level": 6,
+    "joinedAt": "2025-05-11",
+    "isPremium": false
+  },
+  {
+    "id": 9,
+    "username": "katherine_j",
+    "displayName": "Katherine Johnson",
+    "email": "katherine@example.com",
+    "avatarColor": "#EA580C",
+    "level": 13,
+    "joinedAt": "2025-06-08",
+    "isPremium": true
+  },
+  {
+    "id": 10,
+    "username": "radia_p",
+    "displayName": "Radia Perlman",
+    "email": "radia@example.com",
+    "avatarColor": "#4F46E5",
+    "level": 5,
+    "joinedAt": "2025-07-21",
+    "isPremium": false
+  },
+  {
+    "id": 11,
+    "username": "linus_t",
+    "displayName": "Linus Torvalds",
+    "email": "linus@example.com",
+    "avatarColor": "#0F766E",
+    "level": 9,
+    "joinedAt": "2025-08-30",
+    "isPremium": false
+  },
+  {
+    "id": 12,
+    "username": "sophie_w",
+    "displayName": "Sophie Wilson",
+    "email": "sophie@example.com",
+    "avatarColor": "#B45309",
+    "level": 14,
+    "joinedAt": "2025-09-15",
+    "isPremium": true
+  }
+]

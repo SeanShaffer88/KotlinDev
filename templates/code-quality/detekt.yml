@@ -1,0 +1,193 @@
+# detekt.yml — sane starter config for a Kotlin Android project.
+# Pair with the detekt Gradle plugin; check the plugin's current
+# version and config keys before use (see README.md in this folder).
+# Values below favor "warn about real bugs, stay quiet about taste".
+
+build:
+  maxIssues: 0
+  excludeCorrectable: false
+
+config:
+  validation: true
+  warningsAsErrors: false
+
+processors:
+  active: true
+
+console-reports:
+  active: true
+
+comments:
+  active: true
+  AbsentOrWrongFileLicense:
+    active: false
+  CommentOverPrivateFunction:
+    active: false
+  CommentOverPrivateProperty:
+    active: false
+  UndocumentedPublicClass:
+    active: false   # too noisy for app code; enable for published libraries
+  UndocumentedPublicFunction:
+    active: false
+
+complexity:
+  active: true
+  ComplexCondition:
+    active: true
+    threshold: 4
+  ComplexMethod:
+    active: true
+    threshold: 15
+    ignoreSingleWhenExpressions: true
+    ignoreSimpleCondition: true
+  LargeClass:
+    active: true
+    thresholdInClasses: 600
+  LongMethod:
+    active: true
+    threshold: 60
+  LongParameterList:
+    active: true
+    functionThreshold: 6
+    constructorThreshold: 7
+    ignoreDefault: true
+    ignoreDataClasses: true
+  NestedBlockDepth:
+    active: true
+    threshold: 4
+  TooManyFunctions:
+    active: true
+    thresholdInFiles: 15
+    thresholdInClasses: 15
+    thresholdInInterfaces: 8
+    ignoreDeprecated: true
+    ignorePrivate: true
+    ignoreOverloaded: false
+
+coroutines:
+  active: true
+  GlobalCoroutineUsage:
+    active: true   # GlobalScope is almost always a bug in Android code
+  RedundantSuspendModifier:
+    active: true
+  SleepInsteadOfDelay:
+    active: true
+  SuspendFunWithCoroutineScopeReceiver:
+    active: true
+
+empty-blocks:
+  active: true
+  EmptyCatchBlock:
+    active: true
+    allowedExceptionNameRegex: '(_|(ignore|expected).*)'
+  EmptyFinallyBlock:
+    active: true
+  EmptyFunctionBlock:
+    active: false   # Compose previews / test stubs often start empty
+
+exceptions:
+  active: true
+  ExceptionRaisedInUnexpectedLocation:
+    active: false
+  NotImplementedDeclaration:
+    active: true
+  PrintStackTrace:
+    active: true   # use a logger / Crashlytics instead
+  RethrowCaughtException:
+    active: true
+  SwallowedException:
+    active: true
+    allowedExceptionNameRegex: '(_|(ignore|expected).*)'
+  TooGenericExceptionCaught:
+    active: true
+    exceptionNames: ['ArrayIndexOutOfBoundsException','Error','Exception','IllegalMonitorStateException','NullPointerException','RuntimeException','Throwable']
+  TooGenericExceptionThrown:
+    active: true
+
+naming:
+  active: true
+  ClassNaming:
+    active: true
+    classPattern: '[A-Z][a-zA-Z0-9]*'
+  FunctionNaming:
+    active: true
+    functionPattern: '[a-z][a-zA-Z0-9]*'
+    # Composable functions are PascalCase by convention:
+    excludes: ['**/ui/**', '**/*Screen.kt', '**/*Composable*.kt']
+  MatchingDeclarationName:
+    active: true
+  MemberNameEqualsClassName:
+    active: false
+  TopLevelPropertyNaming:
+    active: true
+    constantPattern: '[A-Z][A-Z_0-9]*'
+    propertyPattern: '[a-z][A-Z][a-zA-Z0-9]*'
+
+performance:
+  active: true
+  ForEachOnRange:
+    active: true
+  SpreadOperator:
+    active: true
+    ignoreColumns: false
+  UnnecessaryTemporaryInstantiation:
+    active: true
+
+potential-bugs:
+  active: true
+  Deprecation:
+    active: true
+  DuplicateCaseInWhenExpression:
+    active: true
+  EqualsWithHashCodeExist:
+    active: true
+  ExplicitGarbageCollectionCall:
+    active: true
+  HasPlatformType:
+    active: true
+  ImplicitDefaultLocale:
+    active: true   # String.format without a Locale is a classic Android bug
+  InvalidRange:
+    active: true
+  IteratorHasNextCallsNextMethod:
+    active: true
+  UnsafeCallOnNullableType:
+    active: true
+  UnsafeCast:
+    active: true
+  UnusedPrivateMember:
+    active: true
+  UselessPostfixExpression:
+    active: true
+
+style:
+  active: true
+  ForbiddenComment:
+    active: true
+    values: ['TODO:', 'FIXME:', 'STOPSHIP:']
+    allowedPatterns: 'TODO\\(#\\d+\\)'   # TODOs must carry an issue number
+  MagicNumber:
+    active: true
+    ignoreNumbers: ['-1', '0', '0.5', '1', '2', '100', '1000']
+    ignoreHashCodeFunction: true
+    ignorePropertyDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+    ignoreAnnotation: true
+    ignoreNamedArgument: true
+    excludes: ['**/test/**', '**/androidTest/**', '**/*.kts']
+  MaxLineLength:
+    active: true
+    maxLineLength: 120
+    excludePackageStatements: true
+    excludeImportStatements: true
+  ReturnCount:
+    active: true
+    max: 3
+    excludedFunctions: ['equals']
+  UnusedImports:
+    active: true
+  UseCheckOrError:
+    active: true
+  WildcardImport:
+    active: true
+    excludeImports: []

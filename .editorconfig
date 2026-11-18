@@ -1,0 +1,44 @@
+# .editorconfig - KotlinDev knowledge base / Android projects
+# EditorConfig: https://editorconfig.org - honored by Android Studio,
+# IntelliJ IDEA, VS Code (with the EditorConfig extension) and kotlint.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Kotlin: official code style is 4-space indent, no tabs.
+# https://kotlinlang.org/docs/code-style-migration-guide.html
+[*.{kt,kts}]
+indent_size = 4
+max_line_length = 120
+ij_kotlin_code_style_defaults = KOTLIN_OFFICIAL
+ij_kotlin_allow_trailing_comma_on_call_site = true
+ij_kotlin_allow_trailing_comma = true
+
+# Gradle Kotlin DSL follows the same Kotlin rules
+[*.gradle.kts]
+indent_size = 4
+max_line_length = 120
+
+# XML: Android resources and manifests (Android Studio default is 4,
+# many resource files read fine at 2 - 4 keeps one rule everywhere)
+[*.xml]
+indent_size = 4
+
+[*.{json,yml,yaml,toml}]
+indent_size = 2
+
+[*.md]
+indent_size = 2
+trim_trailing_whitespace = false
+
+[*.{sh,ps1}]
+indent_size = 2
+
+[Makefile]
+indent_style = tab

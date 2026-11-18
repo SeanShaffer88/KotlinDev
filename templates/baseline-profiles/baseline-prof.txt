@@ -1,0 +1,5 @@
+HSPLcom/example/app/MainActivity;-><init>()V
+HSPLcom/example/app/MainActivity;->onCreate(Landroid/os/Bundle;)V
+PLcom/example/app/ui/ExampleAppKt;->ExampleApp(Landroidx/compose/runtime/Composer;I)V
+Lcom/example/app/data/NotesRepository;
+HSPLcom/example/app/data/NotesRepository;->notes()Lkotlinx/coroutines/flow/Flow;

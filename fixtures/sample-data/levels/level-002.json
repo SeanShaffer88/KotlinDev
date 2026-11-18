@@ -1,0 +1,111 @@
+{
+  "id": "level-002",
+  "name": "Hazard Run",
+  "version": 1,
+  "world": {
+    "widthTiles": 24,
+    "heightTiles": 14,
+    "tileSizePx": 32,
+    "backgroundColor": "#101418"
+  },
+  "playerSpawn": {
+    "xTiles": 1,
+    "yTiles": 12
+  },
+  "exit": {
+    "xTiles": 22,
+    "yTiles": 1
+  },
+  "timeLimitSeconds": 9000,
+  "parScore": 4500,
+  "entities": [
+    {
+      "type": "ball",
+      "id": "ball-1",
+      "xTiles": 6,
+      "yTiles": 7,
+      "radiusPx": 12,
+      "color": "#2563EB",
+      "vx": 160,
+      "vy": 110
+    },
+    {
+      "type": "ball",
+      "id": "ball-2",
+      "xTiles": 17,
+      "yTiles": 5,
+      "radiusPx": 10,
+      "color": "#059669",
+      "vx": -140,
+      "vy": 90
+    },
+    {
+      "type": "coin",
+      "id": "coin-1",
+      "xTiles": 8,
+      "yTiles": 4,
+      "value": 100
+    },
+    {
+      "type": "coin",
+      "id": "coin-2",
+      "xTiles": 15,
+      "yTiles": 10,
+      "value": 250
+    },
+    {
+      "type": "coin",
+      "id": "coin-3",
+      "xTiles": 20,
+      "yTiles": 6,
+      "value": 100
+    },
+    {
+      "type": "enemy-patrol",
+      "id": "patrol-1",
+      "xTiles": 10,
+      "yTiles": 11,
+      "toXTiles": 18,
+      "speedTilesPerSecond": 3
+    }
+  ],
+  "goals": [
+    {
+      "type": "reach-exit",
+      "description": "Reach the exit tile"
+    },
+    {
+      "type": "collect-all",
+      "target": "coin",
+      "description": "Collect every coin"
+    },
+    {
+      "type": "time-bonus",
+      "underSeconds": 150,
+      "description": "Finish fast for bonus stars"
+    }
+  ],
+  "tiles": {
+    "legend": {
+      "#": "wall",
+      ".": "floor",
+      "~": "hazard"
+    },
+    "rows": [
+      "########################",
+      "#.....................E#",
+      "#..####....####........#",
+      "#......................#",
+      "#......##......~~......#",
+      "#......................#",
+      "#..~~......####........#",
+      "#......................#",
+      "#....####......~~......#",
+      "#......................#",
+      "#..##......##..........#",
+      "#......................#",
+      "#P.....................#",
+      "########################"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+REPLACE ME — Full Play Store description (max 4000 characters).
+
+Write this for a person skimming the store listing, in plain words:
+
+  * The first 2-3 lines: what the app/game does and why it is useful.
+    This is all most people read.
+  * Then the main features as short lines, one idea per line.
+  * Then anything about privacy/offline use, if true (for example
+    "Works fully offline. No account needed.").
+  * End with support contact.
+
+Rules: no keyword stuffing, no prices or sale claims, no mentions of
+other platforms, nothing you cannot prove in the app itself — Play
+policy treats the listing as a promise.

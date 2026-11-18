@@ -1,0 +1,54 @@
+# Fastfile.example — copy to `Fastfile` (no extension) and adjust.
+# Lanes:
+#   fastlane android build_aab    — build a signed release AAB locally
+#   fastlane android internal     — build + upload to the Play internal track
+#   fastlane android promote      — promote the current internal build to production (staged)
+#
+# Secrets come from the environment / CI secret store, never from this file:
+#   SUPPLY_JSON_KEY       — service-account JSON contents (or use json_key_file in Appfile)
+#   ANDROID_KEYSTORE_*    — upload-keystore path/passwords if you sign outside Gradle config
+# Docs: https://docs.fastlane.tools/actions/supply/ and .../actions/gradle/
+
+default_platform(:android)
+
+platform :android do
+  desc "Build a signed release Android App Bundle"
+  lane :build_aab do
+    gradle(
+      task: "bundle",
+      build_type: "Release",
+      properties: {
+        # versionCode/versionName normally come from the version catalog / CI.
+        # "android.injected.signing.*" properties belong here ONLY if they are
+        # fed from environment variables by your Gradle setup — never literals.
+      }
+    )
+    # AAB lands at app/build/outputs/bundle/release/app-release.aab
+  end
+
+  desc "Build and upload to the Play internal testing track"
+  lane :internal do
+    build_aab
+    upload_to_play_store(
+      track: "internal",
+      aab: "app/build/outputs/bundle/release/app-release.aab",
+      skip_upload_apk: true,
+      skip_upload_metadata: false,   # pushes fastlane/metadata/** (your store listing)
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+      release_status: "completed"    # internal track: completed = testers get it now
+    )
+  end
+
+  desc "Promote the internal build to production as a staged rollout"
+  lane :promote do
+    upload_to_play_store(
+      track: "internal",
+      track_promote_to: "production",
+      rollout: "0.2",                # 20% staged rollout; raise it in the Console or by re-running
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true
+    )
+  end
+end

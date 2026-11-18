@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "levelId": "level-001",
+    "score": 9500,
+    "stars": 3,
+    "durationSeconds": 182,
+    "completed": true,
+    "playedAt": "2026-11-01T20:00:00Z"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "levelId": "level-001",
+    "score": 7200,
+    "stars": 2,
+    "durationSeconds": 240,
+    "completed": true,
+    "playedAt": "2026-11-01T20:12:00Z"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "levelId": "level-001",
+    "score": 9900,
+    "stars": 3,
+    "durationSeconds": 165,
+    "completed": true,
+    "playedAt": "2026-11-02T19:30:00Z"
+  },
+  {
+    "id": 4,
+    "userId": 1,
+    "levelId": "level-002",
+    "score": 6100,
+    "stars": 2,
+    "durationSeconds": 310,
+    "completed": true,
+    "playedAt": "2026-11-02T20:05:00Z"
+  },
+  {
+    "id": 5,
+    "userId": 4,
+    "levelId": "level-001",
+    "score": 4800,
+    "stars": 1,
+    "durationSeconds": 295,
+    "completed": true,
+    "playedAt": "2026-11-03T18:44:00Z"
+  },
+  {
+    "id": 6,
+    "userId": 5,
+    "levelId": "level-002",
+    "score": 8400,
+    "stars": 3,
+    "durationSeconds": 260,
+    "completed": true,
+    "playedAt": "2026-11-03T19:20:00Z"
+  },
+  {
+    "id": 7,
+    "userId": 6,
+    "levelId": "level-001",
+    "score": 5600,
+    "stars": 2,
+    "durationSeconds": 275,
+    "completed": true,
+    "playedAt": "2026-11-04T21:00:00Z"
+  },
+  {
+    "id": 8,
+    "userId": 7,
+    "levelId": "level-002",
+    "score": 7300,
+    "stars": 2,
+    "durationSeconds": 288,
+    "completed": true,
+    "playedAt": "2026-11-04T21:33:00Z"
+  },
+  {
+    "id": 9,
+    "userId": 8,
+    "levelId": "level-001",
+    "score": 3900,
+    "stars": 1,
+    "durationSeconds": 320,
+    "completed": true,
+    "playedAt": "2026-11-05T17:15:00Z"
+  },
+  {
+    "id": 10,
+    "userId": 9,
+    "levelId": "level-002",
+    "score": 9200,
+    "stars": 3,
+    "durationSeconds": 230,
+    "completed": true,
+    "playedAt": "2026-11-05T18:02:00Z"
+  },
+  {
+    "id": 11,
+    "userId": 10,
+    "levelId": "level-001",
+    "score": 6600,
+    "stars": 2,
+    "durationSeconds": 252,
+    "completed": true,
+    "playedAt": "2026-11-06T20:40:00Z"
+  },
+  {
+    "id": 12,
+    "userId": 11,
+    "levelId": "level-001",
+    "score": 8100,
+    "stars": 3,
+    "durationSeconds": 205,
+    "completed": true,
+    "playedAt": "2026-11-06T21:10:00Z"
+  },
+  {
+    "id": 13,
+    "userId": 12,
+    "levelId": "level-002",
+    "score": 8800,
+    "stars": 3,
+    "durationSeconds": 245,
+    "completed": true,
+    "playedAt": "2026-11-07T19:55:00Z"
+  },
+  {
+    "id": 14,
+    "userId": 3,
+    "levelId": "level-002",
+    "score": 5400,
+    "stars": 1,
+    "durationSeconds": 340,
+    "completed": true,
+    "playedAt": "2026-11-07T20:30:00Z"
+  },
+  {
+    "id": 15,
+    "userId": 5,
+    "levelId": "level-001",
+    "score": 7700,
+    "stars": 2,
+    "durationSeconds": 228,
+    "completed": true,
+    "playedAt": "2026-11-08T18:20:00Z"
+  }
+]

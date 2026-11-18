@@ -163,9 +163,11 @@ needs a server, an account, or this repository's website.
 
 | Folder | What it holds |
 |---|---|
-| [templates/](templates/) | Starter project skeleton: a Compose app (Gradle wrapper files, version catalog, manifest, MainActivity), plus GitHub Actions CI and release-AAB workflow templates |
+| [templates/](templates/) | Starter project skeleton: a Compose app (Gradle wrapper files, version catalog, manifest, MainActivity), GitHub Actions CI and release-AAB workflow templates, plus code-quality (detekt/ktlint), fastlane, macrobenchmark, Baseline Profile, R8 rules, and VS Code snippet packs |
 | [examples/](examples/) | Worked examples: Hello Compose, a Counter MVVM + Flow screen, Room notes (entity/DAO/repository), and a Compose Canvas game loop |
-| [tools/](tools/) | `build-ai-bundle.py` bundle generator, `new-project` scaffolders (bash + PowerShell), `check-project.py` validator, `versions.json`, IDE notes |
+| [tools/](tools/) | `build-ai-bundle.py` bundle generator, `new-project` scaffolders (bash + PowerShell), `check-project.py` validator, `versions.json`, IDE notes, and game/asset helpers: `sprite-sheet-packer.py`, `tilemap-validate.py`, `save-migrator.py`, `asset-pipeline.py`, `localization-csv.py` |
+| [scripts/](scripts/) | Device and release helpers in bash + PowerShell pairs: adb install/launch, per-app logcat, screenshots/screen recording, app ops, emulator boot, keystore creation, deep-link testing, and AAB verification with bundletool |
+| [fixtures/](fixtures/) | Synthetic test data (users, notes, products, game scores, game levels), a runnable mock API server serving that data, and a Room seed database script matching the notes data |
 | [checklists/](checklists/) | [New project](checklists/new-project-checklist.md), [pre-release](checklists/pre-release-checklist.md), [Play submission](checklists/play-submission-checklist.md), [game release](checklists/game-release-checklist.md), [performance audit](checklists/performance-audit-checklist.md), [security and privacy](checklists/security-and-privacy-checklist.md) |
 
 ## Root files

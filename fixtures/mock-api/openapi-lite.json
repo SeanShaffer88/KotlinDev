@@ -1,0 +1,341 @@
+{
+  "openapi": "3.0.0-lite",
+  "info": {
+    "title": "KotlinDev Fixtures Mock API",
+    "version": "1.0.0",
+    "description": "Small hand-written spec (not a full OpenAPI validator target) describing the endpoints served by mock-server.py from ../sample-data/. All data is synthetic."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8080"
+    },
+    {
+      "url": "http://10.0.2.2:8080",
+      "description": "Android emulator alias for host loopback"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health check",
+        "responses": {
+          "200": {
+            "description": "{\"status\":\"ok\"}"
+          }
+        }
+      }
+    },
+    "/users": {
+      "get": {
+        "summary": "List users",
+        "responses": {
+          "200": {
+            "description": "Array of User"
+          }
+        }
+      }
+    },
+    "/users/{id}": {
+      "get": {
+        "summary": "One user",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/notes": {
+      "get": {
+        "summary": "List notes",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Array of Note"
+          }
+        }
+      }
+    },
+    "/notes/{id}": {
+      "get": {
+        "summary": "One note",
+        "responses": {
+          "200": {
+            "description": "Note"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "summary": "List products",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Array of Product"
+          }
+        }
+      }
+    },
+    "/products/{id}": {
+      "get": {
+        "summary": "One product",
+        "responses": {
+          "200": {
+            "description": "Product"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/game-scores": {
+      "get": {
+        "summary": "List game scores",
+        "parameters": [
+          {
+            "name": "levelId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Array of GameScore"
+          }
+        }
+      }
+    },
+    "/game-scores/{id}": {
+      "get": {
+        "summary": "One game score",
+        "responses": {
+          "200": {
+            "description": "GameScore"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/levels/{levelId}": {
+      "get": {
+        "summary": "One game level definition",
+        "responses": {
+          "200": {
+            "description": "Level"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "username": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "avatarColor": {
+            "type": "string"
+          },
+          "level": {
+            "type": "integer"
+          },
+          "joinedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "isPremium": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Note": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "title": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pinned": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "Product": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "sku": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "priceCents": {
+            "type": "integer"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "stock": {
+            "type": "integer"
+          },
+          "rating": {
+            "type": "number"
+          }
+        }
+      },
+      "GameScore": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          },
+          "levelId": {
+            "type": "string"
+          },
+          "score": {
+            "type": "integer"
+          },
+          "stars": {
+            "type": "integer"
+          },
+          "durationSeconds": {
+            "type": "integer"
+          },
+          "completed": {
+            "type": "boolean"
+          },
+          "playedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "Level": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "version": {
+            "type": "integer"
+          },
+          "world": {
+            "type": "object"
+          },
+          "playerSpawn": {
+            "type": "object"
+          },
+          "exit": {
+            "type": "object"
+          },
+          "entities": {
+            "type": "array"
+          },
+          "goals": {
+            "type": "array"
+          },
+          "tiles": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

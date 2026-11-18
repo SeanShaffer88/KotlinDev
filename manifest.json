@@ -62,13 +62,18 @@
   ],
   "files": [
     {
+      "path": ".editorconfig",
+      "bytes": 1086,
+      "summary": ""
+    },
+    {
       "path": "AGENTS.md",
       "bytes": 6966,
       "summary": "AGENTS.md \u2014 Instructions for AI agents writing Kotlin Android code"
     },
     {
       "path": "README.md",
-      "bytes": 15534,
+      "bytes": 16232,
       "summary": "KotlinDev \u2014 Android App and Game Development Knowledge Base (Kotlin)"
     },
     {
@@ -332,6 +337,66 @@
       "summary": "Examples"
     },
     {
+      "path": "fixtures/README.md",
+      "bytes": 3506,
+      "summary": "Fixtures \u2014 Sample Data, Mock API, and Database Seeds"
+    },
+    {
+      "path": "fixtures/mock-api/README.md",
+      "bytes": 2134,
+      "summary": "Mock API \u2014 the Fixtures, Over HTTP"
+    },
+    {
+      "path": "fixtures/mock-api/mock-server.py",
+      "bytes": 4430,
+      "summary": ""
+    },
+    {
+      "path": "fixtures/mock-api/openapi-lite.json",
+      "bytes": 7112,
+      "summary": ""
+    },
+    {
+      "path": "fixtures/room/README.md",
+      "bytes": 2795,
+      "summary": "Room Seed \u2014 Prepopulating a Database from `seed.sql`"
+    },
+    {
+      "path": "fixtures/room/seed.sql",
+      "bytes": 4398,
+      "summary": ""
+    },
+    {
+      "path": "fixtures/sample-data/game-scores.json",
+      "bytes": 2892,
+      "summary": ""
+    },
+    {
+      "path": "fixtures/sample-data/levels/level-001.json",
+      "bytes": 1611,
+      "summary": ""
+    },
+    {
+      "path": "fixtures/sample-data/levels/level-002.json",
+      "bytes": 2140,
+      "summary": ""
+    },
+    {
+      "path": "fixtures/sample-data/notes.json",
+      "bytes": 4561,
+      "summary": ""
+    },
+    {
+      "path": "fixtures/sample-data/products.json",
+      "bytes": 2955,
+      "summary": ""
+    },
+    {
+      "path": "fixtures/sample-data/users.json",
+      "bytes": 2652,
+      "summary": ""
+    },
+    {
       "path": "reference/adb-and-tooling-commands.md",
       "bytes": 5322,
       "summary": "Reference \u2014 adb and Tooling Commands"
@@ -367,9 +432,119 @@
       "summary": "Reference \u2014 Play Requirements and Deadlines"
     },
     {
+      "path": "scripts/README.md",
+      "bytes": 4983,
+      "summary": "Scripts \u2014 adb, emulator, and release helpers"
+    },
+    {
+      "path": "scripts/adb-app-ops.ps1",
+      "bytes": 2252,
+      "summary": ""
+    },
+    {
+      "path": "scripts/adb-app-ops.sh",
+      "bytes": 3146,
+      "summary": ""
+    },
+    {
+      "path": "scripts/adb-capture.ps1",
+      "bytes": 1716,
+      "summary": ""
+    },
+    {
+      "path": "scripts/adb-capture.sh",
+      "bytes": 1936,
+      "summary": ""
+    },
+    {
+      "path": "scripts/adb-install-launch.ps1",
+      "bytes": 2178,
+      "summary": ""
+    },
+    {
+      "path": "scripts/adb-install-launch.sh",
+      "bytes": 2648,
+      "summary": ""
+    },
+    {
+      "path": "scripts/adb-logcat-app.ps1",
+      "bytes": 1316,
+      "summary": ""
+    },
+    {
+      "path": "scripts/adb-logcat-app.sh",
+      "bytes": 1890,
+      "summary": ""
+    },
+    {
+      "path": "scripts/deeplink-test.ps1",
+      "bytes": 2099,
+      "summary": ""
+    },
+    {
+      "path": "scripts/deeplink-test.sh",
+      "bytes": 2927,
+      "summary": ""
+    },
+    {
+      "path": "scripts/emulator-boot.ps1",
+      "bytes": 2259,
+      "summary": ""
+    },
+    {
+      "path": "scripts/emulator-boot.sh",
+      "bytes": 3014,
+      "summary": ""
+    },
+    {
+      "path": "scripts/keystore-create.ps1",
+      "bytes": 3699,
+      "summary": ""
+    },
+    {
+      "path": "scripts/keystore-create.sh",
+      "bytes": 3823,
+      "summary": ""
+    },
+    {
+      "path": "scripts/play-bundle-verify.ps1",
+      "bytes": 3731,
+      "summary": ""
+    },
+    {
+      "path": "scripts/play-bundle-verify.sh",
+      "bytes": 3884,
+      "summary": ""
+    },
+    {
       "path": "templates/README.md",
       "bytes": 1749,
       "summary": "Templates"
+    },
+    {
+      "path": "templates/baseline-profiles/README.md",
+      "bytes": 1982,
+      "summary": "Baseline Profiles \u2014 Example File"
+    },
+    {
+      "path": "templates/baseline-profiles/baseline-prof.txt",
+      "bytes": 317,
+      "summary": ""
+    },
+    {
+      "path": "templates/code-quality/.editorconfig",
+      "bytes": 861,
+      "summary": ""
+    },
+    {
+      "path": "templates/code-quality/README.md",
+      "bytes": 2885,
+      "summary": "Code Quality Templates \u2014 detekt + .editorconfig (+ ktlint)"
+    },
+    {
+      "path": "templates/code-quality/detekt.yml",
+      "bytes": 4705,
+      "summary": ""
     },
     {
       "path": "templates/compose-app/app/build.gradle.kts",
@@ -402,6 +577,36 @@
       "summary": ""
     },
     {
+      "path": "templates/fastlane/Appfile.example",
+      "bytes": 650,
+      "summary": ""
+    },
+    {
+      "path": "templates/fastlane/Fastfile.example",
+      "bytes": 2095,
+      "summary": ""
+    },
+    {
+      "path": "templates/fastlane/README.md",
+      "bytes": 2449,
+      "summary": "Fastlane Templates \u2014 Play Publishing with `supply`"
+    },
+    {
+      "path": "templates/fastlane/metadata/en-US/full_description.txt",
+      "bytes": 625,
+      "summary": ""
+    },
+    {
+      "path": "templates/fastlane/metadata/en-US/short_description.txt",
+      "bytes": 92,
+      "summary": ""
+    },
+    {
+      "path": "templates/fastlane/metadata/en-US/title.txt",
+      "bytes": 44,
+      "summary": ""
+    },
+    {
       "path": "templates/github-workflows/android-ci.yml",
       "bytes": 989,
       "summary": ""
@@ -412,9 +617,49 @@
       "summary": ""
     },
     {
+      "path": "templates/macrobenchmark/Macrobenchmark.kt",
+      "bytes": 2887,
+      "summary": ""
+    },
+    {
+      "path": "templates/macrobenchmark/README.md",
+      "bytes": 3177,
+      "summary": "Macrobenchmark Template + Baseline Profile Flow"
+    },
+    {
+      "path": "templates/macrobenchmark/build.gradle.kts",
+      "bytes": 1771,
+      "summary": ""
+    },
+    {
+      "path": "templates/r8/README.md",
+      "bytes": 2407,
+      "summary": "R8 / ProGuard Rules Template"
+    },
+    {
+      "path": "templates/r8/proguard-rules.pro",
+      "bytes": 3514,
+      "summary": ""
+    },
+    {
+      "path": "templates/snippets/README.md",
+      "bytes": 1828,
+      "summary": "VS Code Snippets \u2014 Compose / Kotlin Android"
+    },
+    {
+      "path": "templates/snippets/compose.code-snippets",
+      "bytes": 5508,
+      "summary": ""
+    },
+    {
       "path": "tools/README.md",
       "bytes": 1449,
       "summary": "Tools"
+    },
+    {
+      "path": "tools/asset-pipeline.py",
+      "bytes": 5984,
+      "summary": ""
     },
     {
       "path": "tools/build-ai-bundle.py",
@@ -432,6 +677,11 @@
       "summary": "Android Studio \u2014 recommended settings and setup"
     },
     {
+      "path": "tools/localization-csv.py",
+      "bytes": 4304,
+      "summary": ""
+    },
+    {
       "path": "tools/new-project.ps1",
       "bytes": 2080,
       "summary": ""
@@ -439,6 +689,21 @@
     {
       "path": "tools/new-project.sh",
       "bytes": 2366,
+      "summary": ""
+    },
+    {
+      "path": "tools/save-migrator.py",
+      "bytes": 4482,
+      "summary": ""
+    },
+    {
+      "path": "tools/sprite-sheet-packer.py",
+      "bytes": 9368,
+      "summary": ""
+    },
+    {
+      "path": "tools/tilemap-validate.py",
+      "bytes": 5978,
       "summary": ""
     },
     {

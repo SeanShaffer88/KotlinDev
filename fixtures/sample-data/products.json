@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "sku": "SKU-001",
+    "name": "Mechanical Keyboard",
+    "description": "Hot-swappable 75% keyboard, sample product.",
+    "priceCents": 4999,
+    "currency": "USD",
+    "category": "accessories",
+    "stock": 42,
+    "rating": 4.7
+  },
+  {
+    "id": 2,
+    "sku": "SKU-002",
+    "name": "USB-C Hub",
+    "description": "7-in-1 hub with HDMI and SD reader, sample product.",
+    "priceCents": 3499,
+    "currency": "USD",
+    "category": "accessories",
+    "stock": 87,
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "sku": "SKU-003",
+    "name": "Ergonomic Mouse",
+    "description": "Vertical mouse, sample product.",
+    "priceCents": 2999,
+    "currency": "USD",
+    "category": "accessories",
+    "stock": 15,
+    "rating": 4.3
+  },
+  {
+    "id": 4,
+    "sku": "SKU-004",
+    "name": "Laptop Stand",
+    "description": "Aluminium folding stand, sample product.",
+    "priceCents": 2599,
+    "currency": "USD",
+    "category": "workspace",
+    "stock": 64,
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "sku": "SKU-005",
+    "name": "Noise-Cancelling Headphones",
+    "description": "Over-ear headphones, sample product.",
+    "priceCents": 8999,
+    "currency": "USD",
+    "category": "audio",
+    "stock": 23,
+    "rating": 4.8
+  },
+  {
+    "id": 6,
+    "sku": "SKU-006",
+    "name": "Portable SSD 1TB",
+    "description": "USB 3.2 external SSD, sample product.",
+    "priceCents": 7999,
+    "currency": "USD",
+    "category": "storage",
+    "stock": 51,
+    "rating": 4.9
+  },
+  {
+    "id": 7,
+    "sku": "SKU-007",
+    "name": "Webcam 1080p",
+    "description": "Auto-focus webcam, sample product.",
+    "priceCents": 4499,
+    "currency": "USD",
+    "category": "video",
+    "stock": 0,
+    "rating": 4.2
+  },
+  {
+    "id": 8,
+    "sku": "SKU-008",
+    "name": "Desk Lamp",
+    "description": "Dimmable LED lamp, sample product.",
+    "priceCents": 1999,
+    "currency": "USD",
+    "category": "workspace",
+    "stock": 120,
+    "rating": 4.4
+  },
+  {
+    "id": 9,
+    "sku": "SKU-009",
+    "name": "Game Controller",
+    "description": "Bluetooth controller, sample product.",
+    "priceCents": 5999,
+    "currency": "USD",
+    "category": "gaming",
+    "stock": 38,
+    "rating": 4.7
+  },
+  {
+    "id": 10,
+    "sku": "SKU-010",
+    "name": "Phone Tripod",
+    "description": "Adjustable tripod, sample product.",
+    "priceCents": 1499,
+    "currency": "USD",
+    "category": "video",
+    "stock": 73,
+    "rating": 4.1
+  },
+  {
+    "id": 11,
+    "sku": "SKU-011",
+    "name": "Wrist Rest",
+    "description": "Memory-foam wrist rest, sample product.",
+    "priceCents": 1299,
+    "currency": "USD",
+    "category": "workspace",
+    "stock": 200,
+    "rating": 4.0
+  },
+  {
+    "id": 12,
+    "sku": "SKU-012",
+    "name": "Cable Organizer Kit",
+    "description": "Velcro ties and clips, sample product.",
+    "priceCents": 999,
+    "currency": "USD",
+    "category": "accessories",
+    "stock": 340,
+    "rating": 4.3
+  }
+]

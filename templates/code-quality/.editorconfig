@@ -1,0 +1,35 @@
+# .editorconfig — Kotlin / Android style for this project.
+# Copy to the project root. Android Studio and IntelliJ read it
+# natively; ktlint reads the ktlint_* keys. Check ktlint's current
+# rule names before relying on a specific key (see README.md).
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+
+[*.{kt,kts}]
+indent_size = 4
+max_line_length = 120
+ij_kotlin_allow_trailing_comma = true
+ij_kotlin_allow_trailing_comma_on_call_site = true
+ij_kotlin_imports_layout = *, java.**, javax.**, kotlin.**, ^
+
+# ktlint (https://pinterest.github.io/ktlint/)
+ktlint_code_style = ktlint_official
+ktlint_standard = enabled
+ktlint_experimental = disabled
+
+[*.xml]
+indent_size = 4
+
+[*.{json,yml,yaml,toml}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
